@@ -1,0 +1,16 @@
+{
+  "0x13cd83963e8f6a717b0c4b324cd4f88d6e5568f4": {
+    "name": "BO Stablecoin",
+    "logo": "https://bohrweb.org/BO.png",
+    "erc20": true,
+    "symbol": "BO",
+    "decimals": 6
+  },
+  "0xde3309f83bd9cf499c345718607359ffd0797c88": {
+    "name": "BrMaker",
+    "logo": "https://bohrweb.org/BrMarker.png",
+    "erc20": true,
+    "symbol": "BRM",
+    "decimals": 6
+  }
+}

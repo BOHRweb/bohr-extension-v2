@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>send</title>
+    <g id="page1-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="20.4" transform="translate(-208.000000, -299.000000)">
+            <g id="ps-12" transform="translate(30.000000, 90.000000)">
+                <g id="ps-11" transform="translate(0.000000, 209.000000)">
+                    <g id="sendg" transform="translate(178.000000, 0.000000)">
+                        <circle id="t" fill="#1677FE" cx="24" cy="24" r="24"></circle>
+                        <polyline id="l-31" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="19.0666667 27.2954545 13 23.9545455 34 12.5 31.2 33.5 24.2 30.1590909"></polyline>
+                        <polyline id="l-32" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="33.5 13.5 21.5 28.326087 21.5 34.5"></polyline>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

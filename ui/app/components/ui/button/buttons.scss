@@ -1,0 +1,323 @@
+/*
+  Buttons
+ */
+
+$hover-secondary: #b0d7f2;
+$hover-default: #b3b3b3;
+$hover-confirm: #1677FE;
+$hover-red: #feb6bf;
+$hover-red-primary: #c72837;
+$hover-orange: #ffd3b5;
+$warning-light-orange: #f8b588;
+
+.button {
+  @include H6;
+  color:$normal-text;
+  font-weight: 500;
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 6px;
+  width: 100%;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+
+  &--disabled,
+  &[disabled] {
+    cursor: auto;
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    margin-right: 4px;
+  }
+}
+
+.btn-secondary {
+  background-color: $blue;
+  //border: 1px solid $blue;
+  color: $white;
+
+  //&:hover {
+  //  background-color: #efefef;
+  //  //border-color: red;
+  //}
+
+  //&:active {
+  //  background: #efefef;
+  //  //border-color: $blue;
+  //}
+
+  &--disabled,
+  &[disabled] {
+    opacity: 1;
+    background-color: #efefef;
+    color:#c1bfbf;
+  }
+}
+
+.btn-warning {
+  color: $Orange-500;
+  border: 1px solid $hover-orange;
+  background-color: #fff;
+
+  &:hover {
+    border-color: $Orange-500;
+  }
+
+  &:active {
+    background: #fef5ef;
+    border-color: $Orange-500;
+  }
+
+  &--disabled,
+  &[disabled] {
+    opacity: 1;
+    color: $hover-orange;
+  }
+}
+
+.btn-danger {
+  color: $Red-500;
+  border: 1px solid $hover-red;
+  background-color: $white;
+
+  &:hover {
+    border-color: $Red-500;
+  }
+
+  &:active {
+    background: $Red-000;
+    border-color: $Red-500;
+  }
+
+  &--disabled,
+  &[disabled] {
+    opacity: 1;
+    color: $hover-red;
+  }
+}
+
+.btn-danger-primary {
+  color: $white;
+  border: 1px solid $Red-500;
+  background-color: $Red-500;
+
+  &:hover {
+    border-color: $hover-red-primary;
+    background-color: $hover-red-primary;
+  }
+
+  &:active {
+    background: $Red-600;
+    border-color: $Red-600;
+  }
+
+  &--disabled,
+  &[disabled] {
+    opacity: 1;
+    border-color: $hover-red;
+    background-color: $hover-red;
+  }
+}
+
+.btn-default {
+  color: $Grey-500;
+  border: 1px solid $hover-default;
+
+  &:hover {
+    border-color: $Grey-500;
+  }
+
+  &:active {
+    background: #fbfbfc;
+    border-color: $Grey-500;
+  }
+
+  &--disabled,
+  &[disabled] {
+    opacity: 1;
+    color: $hover-default;
+  }
+}
+
+.btn-primary {
+  color: #FFFFFF;
+  //border: 1px solid $blue;
+  background-color: #037dd6;
+
+  &:hover {
+    border-color: $hover-confirm;
+    //background-color: $hover-confirm;
+  }
+
+  &:active {
+    //background: $Blue-600;
+    border-color: #0260a4;
+  }
+
+  &--disabled,
+  &[disabled] {
+    //border-color: $blue;
+    background-color: $hover-secondary;
+  }
+}
+
+.btn-link {
+  @include H4;
+
+  color: $hover-confirm;
+  cursor: pointer;
+
+  &:hover {
+    color: #1098fc;
+  }
+
+  &:active {
+    color: #0260a4;
+  }
+
+  &--disabled,
+  &[disabled] {
+    cursor: auto;
+    opacity: 1;
+    pointer-events: none;
+    color: $hover-secondary;
+  }
+}
+
+.btn--large {
+  min-height: 54px;
+  min-width: 80px;
+}
+
+/**
+  All Buttons styles are deviations from design guide
+ */
+
+.btn-raised {
+  color: $blue;
+  background-color: $Grey-000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  padding: 6px;
+  height: initial;
+  min-height: initial;
+  width: initial;
+  min-width: initial;
+}
+
+.btn--first-time {
+  @include H4;
+
+  height: 54px;
+  width: 198px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.14);
+  color: #FFFFFF;
+  font-weight: 500;
+  transition: 200ms ease-in-out;
+  background-color: $blue;
+  border-radius: 0;
+}
+
+button[disabled],
+input[type="submit"][disabled] {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.btn--rounded {
+  border-radius: 100px;
+  will-change: box-shadow;
+  transition: box-shadow cubic-bezier(0.6, -0.28, 0.735, 0.045) 200ms;
+
+  &:hover {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  }
+
+  &.btn-secondary {
+    border: 1px solid $blue;
+
+    &--disabled,
+    &[disabled] {
+      border-color: #232323;
+      color: $blue;
+    }
+
+    &:active {
+      border-color: #232323;
+    }
+  }
+
+  &.btn-default {
+    border: 1px solid $Grey-500;
+
+    &--disabled,
+    &[disabled] {
+      border-color: $hover-secondary;
+      color: $hover-default;
+    }
+
+    &:active {
+      border-color: $Grey-600;
+    }
+  }
+
+  &.btn-danger {
+    border: 1px solid $Red-500;
+
+    &--disabled,
+    &[disabled] {
+      border-color: $Red-100;
+      color: $Red-300;
+    }
+
+    &:active {
+      border-color: $Red-600;
+    }
+  }
+
+  &.btn-warning {
+    border: 1px solid $Orange-500;
+
+    &--disabled,
+    &[disabled] {
+      border-color: $warning-light-orange;
+      color: $warning-light-orange;
+    }
+
+    &:active {
+      border-color: $Orange-600;
+    }
+  }
+
+  &.btn-primary {
+    background-color: $blue;
+    color: #fff;
+
+    &--disabled,
+    &[disabled] {
+      background-color: $hover-secondary;
+    }
+
+    &:active {
+      background-color: #0260a4;
+    }
+  }
+
+  &.btn-danger-primary {
+    background-color: $Red-500;
+
+    &--disabled,
+    &[disabled] {
+      background-color: $Red-300;
+    }
+
+    &:active {
+      background-color: $Red-600;
+    }
+  }
+}
